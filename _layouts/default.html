@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>{% if page.title %}{{ page.title }} - {{ site.title }}{% else %}{{ site.title }}{% endif %}</title>
+  {% feed_meta %}
+  <style>
+    body { font-family: sans-serif; line-height: 1.6; max-width: 44rem; margin: 0 auto; padding: 1rem 1.5rem; color: #222; }
+    header { border-bottom: 1px solid #ddd; margin-bottom: 2rem; }
+    header h1 { margin-bottom: 0.25rem; }
+    header a { text-decoration: none; color: #222; }
+    nav a { margin-right: 1rem; }
+    img { max-width: 100%; height: auto; }
+    footer { border-top: 1px solid #ddd; margin-top: 3rem; padding-top: 1rem; font-size: 0.9rem; color: #666; }
+    .post-list { list-style: none; padding: 0; }
+    .post-list li { margin-bottom: 0.5rem; }
+    .post-date { color: #666; font-size: 0.9rem; }
+  </style>
+</head>
+<body>
+  <header>
+    <h1><a href="{{ site.baseurl }}/">{{ site.title }}</a></h1>
+    <nav>
+      <a href="{{ site.baseurl }}/">Posts</a>
+      <a href="{{ site.baseurl }}/about.html">About</a>
+    </nav>
+  </header>
+  <main>
+    {{ content }}
+  </main>
+  <footer>
+    <p>{{ site.description }}</p>
+  </footer>
+</body>
+</html>

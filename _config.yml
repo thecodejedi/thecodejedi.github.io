@@ -1,0 +1,12 @@
+title: Markus Hoffmann
+description: Markus Hoffmann (oberfreak) - Konsole contributor, writing about KDE
+url: https://thecodejedi.github.io
+baseurl: ""
+
+plugins:
+  - jekyll-feed
+
+feed:
+  path: feed.xml
+
+markdown: kramdown
